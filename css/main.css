@@ -10,7 +10,7 @@
  *    ## links
  *  # typography & general theme styles
  *    ## lists
- *    ## responsive video container
+ *    ## responsive video containe
  *    ## floated image
  *    ## tables
  *    ## spacing 
@@ -3129,8 +3129,8 @@ html.no-csstransitions .hero-content {
   background-image: url(../images/icons/social/icon-facebook.svg);
 }
 
-.social-list__icon--twitter::before {
-  background-image: url(../images/icons/social/icon-twitter.svg);
+.social-list__icon--whatsapp::before {
+  background-image: url(../images/icons/social/icon-whatsapp.svg);
 }
 
 .social-list__icon--instagram::before {
