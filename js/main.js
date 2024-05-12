@@ -133,6 +133,29 @@
         });
     };
 
+    /* Bible Modal
+    * ------------------------------------------------------ */
+    const ssBibleModal = function() {
+        const modal = $('#modal');
+        const link = $('blockquote a');
+        const closeButton = $('.close');
+
+        link.on('click', function(e) {
+            e.preventDefault();
+            modal.fadeIn();
+        });
+
+        closeButton.on('click', function() {
+            modal.fadeOut();
+        });
+
+        $(window).on('click', function(event) {
+            if (event.target === modal[0]) {
+                modal.fadeOut();
+            }
+        });
+    };
+
 
    /* Initialize
     * ------------------------------------------------------ */
