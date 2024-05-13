@@ -9,6 +9,32 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDR2fBrn2kTtmHy0qYZqHglW5uQa3t6nwE",
+          authDomain: "ciudadavivamiento-9d327.firebaseapp.com",
+          databaseURL: "https://ciudadavivamiento-9d327-default-rtdb.firebaseio.com",
+          projectId: "ciudadavivamiento-9d327",
+          storageBucket: "ciudadavivamiento-9d327.appspot.com",
+          messagingSenderId: "581098070615",
+          appId: "1:581098070615:web:c8267cafff44835771f912",
+          measurementId: "G-8VJ9BHR8XZ"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+
     <!-- mobile specific metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,6 +56,26 @@
 </head>
 
 <body id="top">
+
+
+    <!-- Agrega la burbuja de chat -->
+    <div id="burbuja-chat" onclick="toggleChat()">
+        <img src="chat-icon.png" alt="Chat Icon">
+    </div>
+    <!-- Agrega el panel emergente para el chat en vivo -->
+    <div id="panel-chat" style="display: none;">
+        <!-- Aquí puedes agregar el formulario de chat y el área de mensajes -->
+        <form id="formulario-chat">
+            <input type="text" id="input-mensaje" placeholder="Escribe tu mensaje...">
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="area-mensajes">
+            <!-- Aquí se mostrarán los mensajes -->
+        </div>
+    </div>
+
+
+
 
     <!-- preloader
     ================================================== -->
@@ -91,8 +137,7 @@
                     Bienvenido a nuestra página de contacto:
                     ¡Nos encanta saber de ti! Si tienes alguna pregunta, solicitud de oración
                     o simplemente deseas ponerte en contacto con nosotros, ¡estás en el lugar correcto!
-                    Estamos aquí para ayudarte en cualquier forma que podamos. No dudes en enviarnos
-                     un mensaje con cualquier pregunta que tengas o información que necesites.          
+                    Estamos aquí para ayudarte en cualquier forma que podamos. No dudes en enviarnos un mensaje con cualquier pregunta que tengas o información que necesites.          
                 </p>
 
                 <p>
@@ -262,5 +307,6 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
 
 </body>
