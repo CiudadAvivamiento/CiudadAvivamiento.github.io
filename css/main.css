@@ -27,10 +27,14 @@
  * # estilos chat en vivo
  *
  * ------------------------------------------------------------------- */
- #burbuja-chat {
+ #contenedor-chat {
   position: fixed;
-  bottom: 20px;
+  top: 50%;
   right: 20px;
+  transform: translateY(-50%);
+}
+
+#burbuja-chat {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -47,20 +51,12 @@
 }
 
 #panel-chat {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
   width: 300px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 10px;
 }
-
-
-
-
-
 
 /* ===================================================================
  * # cuadro modal para los versiculos

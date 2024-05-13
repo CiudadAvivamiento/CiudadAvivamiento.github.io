@@ -58,19 +58,22 @@
 <body id="top">
 
 
-    <!-- Agrega la burbuja de chat -->
-    <div id="burbuja-chat" onclick="toggleChat()">
-        <img src="chat-icon.png" alt="Chat Icon">
-    </div>
-    <!-- Agrega el panel emergente para el chat en vivo -->
-    <div id="panel-chat" style="display: none;">
-        <!-- Aquí puedes agregar el formulario de chat y el área de mensajes -->
-        <form id="formulario-chat">
-            <input type="text" id="input-mensaje" placeholder="Escribe tu mensaje...">
-            <button type="submit">Enviar</button>
-        </form>
-        <div id="area-mensajes">
-            <!-- Aquí se mostrarán los mensajes -->
+    <!-- Agrega el contenedor principal para el chat -->
+    <div id="contenedor-chat">
+        <!-- Agrega la burbuja de chat -->
+        <div id="burbuja-chat" onclick="toggleChat()">
+            <img src="favicon.ico" alt="Chat Icon">
+        </div>
+        <!-- Agrega el panel emergente para el chat en vivo -->
+        <div id="panel-chat" style="display: none;">
+            <!-- Aquí puedes agregar el formulario de chat y el área de mensajes -->
+            <form id="formulario-chat">
+                <input type="text" id="input-mensaje" placeholder="Escribe tu mensaje...">
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="area-mensajes">
+                <!-- Aquí se mostrarán los mensajes -->
+            </div>
         </div>
     </div>
 
