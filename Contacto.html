@@ -9,9 +9,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    
-
-
     <!-- mobile specific metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,99 +30,6 @@
 </head>
 
 <body id="top">
-
-
-    <!-- Agrega el contenedor principal para el chat -->
-    <div id="contenedor-chat">
-        <!-- Agrega la burbuja de chat -->
-        <div id="burbuja-chat" onclick="toggleChat()">
-            <img src="favicon.ico" alt="Chat Icon">
-        </div>
-        <!-- Agrega el panel emergente para el chat en vivo -->
-        <div id="panel-chat" style="display: none;">
-            <!-- Aquí puedes agregar el formulario de chat y el área de mensajes -->
-            <form id="formulario-chat">
-                <input type="text" id="input-mensaje" placeholder="Escribe tu mensaje...">
-                <button type="submit">Enviar</button>
-            </form>
-            <div id="area-mensajes">
-                <!-- Aquí se mostrarán los mensajes -->
-            </div>
-        </div>
-    </div>
-
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyDR2fBrn2kTtmHy0qYZqHglW5uQa3t6nwE",
-          authDomain: "ciudadavivamiento-9d327.firebaseapp.com",
-          databaseURL: "https://ciudadavivamiento-9d327-default-rtdb.firebaseio.com",
-          projectId: "ciudadavivamiento-9d327",
-          storageBucket: "ciudadavivamiento-9d327.appspot.com",
-          messagingSenderId: "581098070615",
-          appId: "1:581098070615:web:c8267cafff44835771f912",
-          measurementId: "G-8VJ9BHR8XZ"
-        };
-      
-        // Inicializa Firebase
-        firebase.initializeApp(firebaseConfig);
-
-        // Referencia a la base de datos de Firebase
-        const db = firebase.database();
-
-        // Función para enviar un mensaje
-        function enviarMensaje(event) {
-            event.preventDefault(); // Evita que el formulario se envíe
-
-            const mensajeInput = document.getElementById("input-mensaje");
-            const mensaje = mensajeInput.value;
-
-            if (mensaje.trim() !== "") {
-                // Guarda el mensaje en la base de datos de Firebase
-                db.ref("mensajes").push({
-                    mensaje: mensaje
-                });
-
-                // Limpia el campo de entrada después de enviar el mensaje
-                mensajeInput.value = "";
-            }
-        }
-
-        // Función para mostrar los mensajes
-        function mostrarMensajes(snapshot) {
-            const areaMensajes = document.getElementById("area-mensajes");
-            areaMensajes.innerHTML = ""; // Borra los mensajes anteriores
-
-            snapshot.forEach((childSnapshot) => {
-                const mensaje = childSnapshot.val().mensaje;
-                const mensajeElement = document.createElement("div");
-                mensajeElement.textContent = mensaje;
-                areaMensajes.appendChild(mensajeElement);
-            });
-        }
-
-        // Registra un listener para mostrar los mensajes en tiempo real
-        db.ref("mensajes").on("value", (snapshot) => {
-            mostrarMensajes(snapshot);
-        });
-
-        // Agrega un listener para enviar mensajes cuando se envía el formulario
-        document.getElementById("formulario-chat").addEventListener("submit", enviarMensaje);
-
-        // Función para mostrar/ocultar el panel de chat
-        function toggleChat() {
-            const panelChat = document.getElementById("panel-chat");
-            panelChat.style.display = panelChat.style.display === "none" ? "block" : "none";
-        }
-    </script>
-
 
     <!-- preloader
     ================================================== -->
@@ -357,6 +261,5 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/chat.js"></script>
 
 </body>

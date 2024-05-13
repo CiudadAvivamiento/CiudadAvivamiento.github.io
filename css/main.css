@@ -24,41 +24,6 @@
 }
 
 /* ===================================================================
- * # estilos chat en vivo
- *
- * ------------------------------------------------------------------- */
- #contenedor-chat {
-  position: fixed;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-}
-
-#burbuja-chat {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #007bff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-#burbuja-chat img {
-  width: 40px;
-  height: 40px;
-}
-
-#panel-chat {
-  width: 300px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-/* ===================================================================
  * # cuadro modal para los versiculos
  *
  * ------------------------------------------------------------------- */
