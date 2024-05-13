@@ -3326,7 +3326,7 @@ html.no-csstransitions .hero-content {
   transition: all .8s;
   position: fixed;
   bottom: 4rem;
-  right: 4.8rem;
+  left: 4.8rem;
 }
 
 .ss-go-top a {
@@ -3379,7 +3379,7 @@ html.no-csstransitions .hero-content {
 @media screen and (max-width:1400px) {
   .ss-go-top {
     bottom: 3.6rem;
-    right: 3.2rem;
+    left: 3.2rem;
   }
 
 }
