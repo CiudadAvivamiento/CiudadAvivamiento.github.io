@@ -1,5 +1,5 @@
 /* ===================================================================
- * Hesed 1.0.0 - Main JS
+ * Ciudad Avivamiento - Main JS
  *
  * ------------------------------------------------------------------- */
 
@@ -165,6 +165,7 @@
         ssMobileMenu();
         ssAlertBoxes();
         ssSmoothScroll();
+        ssBibleModal();
         ssBackToTop();
 
     })();
