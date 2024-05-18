@@ -156,23 +156,6 @@
         });
     };
 
-    function openSinpeModal() {
-        document.getElementById("modal-sinpe-general").style.display = "block";
-    }
-    
-    function closeSinpeModal() {
-        document.getElementById("modal-sinpe-general").style.display = "none";
-    }
-    
-    window.onclick = function(event) {
-        var modal = document.getElementById("modal-sinpe-general");
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-    
-
-
    /* Initialize
     * ------------------------------------------------------ */
     (function ssInit() {
