@@ -23,6 +23,67 @@
 
 }
 
+/* Estilos para el cuadro modal SINPE General */
+.sinpe-general-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el contenido del modal SINPE General */
+.sinpe-general-modal-content {
+  background-color: #ffffff;
+  margin: 10% auto;
+  padding: 0;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Estilos para la barra superior del modal SINPE General */
+.sinpe-general-modal-header {
+  background-color: #474747;
+  padding: 12px;
+}
+
+/* Estilos para el título del modal SINPE General */
+.sinpe-general-modal-title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+/* Estilos para el botón de cierre SINPE General */
+.sinpe-general-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  color: #ffffff;
+  background-color: #474747;
+  width: 45px;
+  height: 46.5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sinpe-general-modal-body {
+  color: #161414;
+  margin-top: 20px;
+  margin-left: 28px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  font-size: larger;
+}
 
 
 

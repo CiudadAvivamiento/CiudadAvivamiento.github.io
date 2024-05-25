@@ -156,19 +156,39 @@
         });
     };
 
+   /* SINPE General Modal
+ * ------------------------------------------------------ */
+const ssSinpeGeneralModal = function() {
+    const modal = $('#sinpeGeneralModal');
+    const openModalBtn = $('#openSinpeGeneralModalBtn');
+    const closeModalBtn = $('.sinpe-general-close');
 
-    
-   /* Initialize
-    * ------------------------------------------------------ */
-    (function ssInit() {
+    openModalBtn.on('click', function(e) {
+        e.preventDefault();
+        modal.fadeIn();
+    });
 
-        ssPreloader();
-        ssMobileMenu();
-        ssAlertBoxes();
-        ssSmoothScroll();
-        ssBibleModal();
-        ssBackToTop();
+    closeModalBtn.on('click', function() {
+        modal.fadeOut();
+    });
 
-    })();
+    $(window).on('click', function(event) {
+        if (event.target === modal[0]) {
+            modal.fadeOut();
+        }
+    });
+};
+
+/* Initialize
+ * ------------------------------------------------------ */
+(function ssInit() {
+    ssPreloader();
+    ssMobileMenu();
+    ssAlertBoxes();
+    ssSmoothScroll();
+    ssBibleModal();
+    ssSinpeGeneralModal();
+    ssBackToTop();
+})();
 
 })(jQuery);
