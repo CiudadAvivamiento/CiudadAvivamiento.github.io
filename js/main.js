@@ -156,31 +156,8 @@
         });
     };
 
-    // Obtener los elementos del DOM
-const sinpeModal = document.getElementById('sinpeGeneralModal');
-const openSinpeModalBtn = document.getElementById('openSinpeModalBtn');
-const closeSinpeModalBtn = document.getElementById('closeSinpeModalBtn');
 
-// Función para abrir el modal
-openSinpeModalBtn.onclick = function(event) {
-  event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
-  sinpeModal.style.display = 'block';
-}
-
-// Función para cerrar el modal
-closeSinpeModalBtn.onclick = function() {
-  sinpeModal.style.display = 'none';
-}
-
-// Cerrar el modal al hacer clic fuera del contenido del modal
-window.onclick = function(event) {
-  if (event.target === sinpeModal) {
-    sinpeModal.style.display = 'none';
-  }
-}
-
-
-
+    
    /* Initialize
     * ------------------------------------------------------ */
     (function ssInit() {
