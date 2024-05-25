@@ -179,6 +179,29 @@ const ssSinpeGeneralModal = function() {
     });
 };
 
+/* SINPE Misiones Modal
+ * ------------------------------------------------------ */
+const ssSinpeMisionesModal = function() {
+    const modal = $('#sinpeMisionesModal');
+    const openModalBtn = $('#openSinpeMisionesModalBtn');
+    const closeModalBtn = $('.sinpe-misiones-close');
+
+    openModalBtn.on('click', function(e) {
+        e.preventDefault();
+        modal.fadeIn();
+    });
+
+    closeModalBtn.on('click', function() {
+        modal.fadeOut();
+    });
+
+    $(window).on('click', function(event) {
+        if (event.target === modal[0]) {
+            modal.fadeOut();
+        }
+    });
+};
+
 /* Initialize
  * ------------------------------------------------------ */
 (function ssInit() {
@@ -188,6 +211,7 @@ const ssSinpeGeneralModal = function() {
     ssSmoothScroll();
     ssBibleModal();
     ssSinpeGeneralModal();
+    ssSinpeMisionesModal();
     ssBackToTop();
 })();
 
