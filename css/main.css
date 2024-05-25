@@ -3492,6 +3492,10 @@ html.no-csstransitions .hero-content {
 .page-header--misiones {
   background-image: url(../images/header-bgs/misiones.jpg);
 }
+
+.page-header--mundo {
+  background-image: url(../images/header-bgs/mundo.jpg);
+}
 .page-header__content {
   position: relative;
 }
