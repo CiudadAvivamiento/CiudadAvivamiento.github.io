@@ -2839,12 +2839,46 @@ html.no-csstransitions .hero-content {
 
 }
 
+/* ===================================================================
+ * # blockquote
+ *
+ * ------------------------------------------------------------------- */
+ blockquote {
+  padding: 2rem;
+  margin: 2rem 0;
+  border-left: 4px solid #ccc; /* Línea decorativa a la izquierda */
+  background-color: #f9f9f9; /* Fondo suave para diferenciar el bloque */
+}
+
+blockquote p {
+  margin: 0 0 1.5rem 0; /* Margen inferior para el párrafo */
+  font-size: 1.1rem; /* Tamaño de fuente ajustado */
+  line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 1rem; /* Espacio superior para el elemento cite */
+  font-size: 1rem; /* Tamaño de fuente del cite */
+  font-style: normal; /* Normaliza el estilo de la fuente */
+  color: #555; /* Color del texto cite */
+}
+
+blockquote cite a {
+  color: #007bff; /* Color del enlace */
+  text-decoration: none; /* Eliminar subrayado por defecto */
+}
+
+blockquote cite a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
 
 /* ===================================================================
  * # connect
  *
  * ------------------------------------------------------------------- */
-.s-connect {
+ .s-connect {
   padding-top: 16rem;
   padding-bottom: 0;
   background-color: #ffffff;
@@ -2852,7 +2886,7 @@ html.no-csstransitions .hero-content {
 
 .connect-content {
   padding-bottom: 12rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: none; /* Cambiado de '1px solid rgba(0, 0, 0, 0.1)' a 'none' */
 }
 
 .connect-content .column {
@@ -2876,6 +2910,21 @@ html.no-csstransitions .hero-content {
   margin-top: auto;
   margin-right: 0;
 }
+
+.connect-content h3 {
+  margin-top: 3rem; /* Espacio antes del título */
+  margin-bottom: 1.5rem; /* Espacio después del título */
+}
+
+.connect-content p {
+  margin-bottom: 2rem; /* Espacio después del párrafo */
+}
+
+.connect-content a.btn {
+  margin-bottom: 3rem; /* Espacio después del botón */
+}
+
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
