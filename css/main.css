@@ -2843,20 +2843,26 @@ html.no-csstransitions .hero-content {
  * # blockquote
  *
  * ------------------------------------------------------------------- */
- blockquote {
+ .content-wrapper {
+  max-width: 800px; /* Ajusta el ancho máximo según tu diseño */
+  margin: 0 auto; /* Centra el contenedor */
+  padding: 2rem; /* Espaciado interno para el contenedor */
+}
+
+.content-wrapper blockquote {
   padding: 2rem;
   margin: 2rem 0;
   border-left: 4px solid #ccc; /* Línea decorativa a la izquierda */
   background-color: #f9f9f9; /* Fondo suave para diferenciar el bloque */
 }
 
-blockquote p {
+.content-wrapper blockquote p {
   margin: 0 0 1.5rem 0; /* Margen inferior para el párrafo */
   font-size: 1.1rem; /* Tamaño de fuente ajustado */
   line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
 }
 
-blockquote cite {
+.content-wrapper blockquote cite {
   display: block;
   margin-top: 1rem; /* Espacio superior para el elemento cite */
   font-size: 1rem; /* Tamaño de fuente del cite */
@@ -2864,12 +2870,12 @@ blockquote cite {
   color: #555; /* Color del texto cite */
 }
 
-blockquote cite a {
+.content-wrapper blockquote cite a {
   color: #007bff; /* Color del enlace */
   text-decoration: none; /* Eliminar subrayado por defecto */
 }
 
-blockquote cite a:hover {
+.content-wrapper blockquote cite a:hover {
   text-decoration: underline; /* Subrayado al pasar el mouse */
 }
 
@@ -2922,6 +2928,10 @@ blockquote cite a:hover {
 
 .connect-content a.btn {
   margin-bottom: 3rem; /* Espacio después del botón */
+}
+
+.extra-space-top {
+  margin-top: 6rem; /* Ajusta este valor según sea necesario */
 }
 
 
