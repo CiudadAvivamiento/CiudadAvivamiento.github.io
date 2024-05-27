@@ -2846,41 +2846,9 @@ html.no-csstransitions .hero-content {
  .content-wrapper {
   padding-left: 2.4vw;
   padding-right: 2.4vw;
-  max-width: 1000px; /* Ajusta el ancho máximo según tu diseño */
   margin: 0 auto; /* Centra el contenedor */
   padding: 2rem; /* Espaciado interno para el contenedor */
 }
-
-.content-wrapper blockquote {
-  padding: 2rem;
-  margin: 2rem 0;
-  border-left: 4px solid #ccc; /* Línea decorativa a la izquierda */
-  background-color: #f9f9f9; /* Fondo suave para diferenciar el bloque */
-}
-
-.content-wrapper blockquote p {
-  margin: 0 0 1.5rem 0; /* Margen inferior para el párrafo */
-  font-size: 1.1rem; /* Tamaño de fuente ajustado */
-  line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
-}
-
-.content-wrapper blockquote cite {
-  display: block;
-  margin-top: 1rem; /* Espacio superior para el elemento cite */
-  font-size: 1rem; /* Tamaño de fuente del cite */
-  font-style: normal; /* Normaliza el estilo de la fuente */
-  color: #555; /* Color del texto cite */
-}
-
-.content-wrapper blockquote cite a {
-  color: #007bff; /* Color del enlace */
-  text-decoration: none; /* Eliminar subrayado por defecto */
-}
-
-.content-wrapper blockquote cite a:hover {
-  text-decoration: underline; /* Subrayado al pasar el mouse */
-}
-
 
 /* ===================================================================
  * # connect
