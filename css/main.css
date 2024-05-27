@@ -2844,7 +2844,7 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
  .content-wrapper {
-  max-width: 800px; /* Ajusta el ancho máximo según tu diseño */
+  max-width: 1000px; /* Ajusta el ancho máximo según tu diseño */
   margin: 0 auto; /* Centra el contenedor */
   padding: 2rem; /* Espaciado interno para el contenedor */
 }
