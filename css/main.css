@@ -3656,6 +3656,10 @@ html.no-csstransitions .hero-content {
 .page-header--mundo {
   background-image: url(../images/header-bgs/mundo.jpg);
 }
+
+.page-header--avivakids {
+  background-image: url(../images/header-bgs/avivakids.jpg);
+}
 .page-header__content {
   position: relative;
 }
